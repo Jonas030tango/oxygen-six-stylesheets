@@ -6,7 +6,7 @@ Oxygen has no way to name or edit its stylesheets from the WordPress admin. This
 
 ## Download
 
-The installable ZIP files are in the [`versions`](versions) folder.
+The installable ZIP files are in the [`versions`](versions) folder. The [changelog](CHANGELOG.md) lists the changes in each version.
 
 | Version | File |
 |---|---|
