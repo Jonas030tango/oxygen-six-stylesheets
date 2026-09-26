@@ -2,6 +2,16 @@
 
 Each linked version number opens the installable ZIP file of that version. Versions before 0.3.1 have no ZIP file.
 
+## [0.3.8](versions/oxygen-six-stylesheets-0.3.8.zip) – 2026-09-26
+
+### Fixed
+
+- Revisions keep the CSS unchanged for users without the `unfiltered_html` permission, for example site admins on a multisite. Before, WordPress changed `a > b` to `a &gt; b` in the revision, and a restore broke the CSS. Revisions from older versions can still contain `&gt;`: check the CSS after you restore one of them.
+- The import finds an existing stylesheet or category only by its exact name. Before, "Färben" counted as a duplicate of "Farben", and "Größe" of "Grösse".
+- The import reuses an existing category at any level of the category tree.
+- The import keeps a category named `0`.
+- The CSS filter replaces a run of `<` before a tag in one step, so a second save gives the same CSS.
+
 ## [0.3.7](versions/oxygen-six-stylesheets-0.3.7.zip) – 2026-09-26
 
 ### Fixed
