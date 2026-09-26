@@ -2,7 +2,7 @@
 
 Each linked version number opens the installable ZIP file of that version. Versions before 0.3.1 have no ZIP file.
 
-## [0.3.9](versions/oxygen-six-stylesheets-0.3.9.zip) – 2026-09-26
+## [0.3.9](versions/oxygen-six-stylesheets-0.3.9.zip) – 2026-09-27
 
 ### Added
 
