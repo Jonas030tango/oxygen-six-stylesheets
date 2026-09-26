@@ -2,6 +2,16 @@
 
 Each linked version number opens the installable ZIP file of that version. Versions before 0.3.1 have no ZIP file.
 
+## [0.3.7](versions/oxygen-six-stylesheets-0.3.7.zip) – 2026-09-26
+
+### Fixed
+
+- A save keeps the backslashes in the CSS, for example `content: "\201C"` or `.md\:flex`. Older versions deleted them on each save, also in the revisions. CSS saved with an older version does not get its backslashes back: add them again.
+- A revision restore keeps the backslashes in the CSS.
+- The import keeps the backslashes in the CSS, the stylesheet titles and the category names.
+- The import finds an existing stylesheet by its exact title and skips it. Before, a title with a backslash, two spaces, `<` or `%` was imported again.
+- The import accepts the title `0`.
+
 ## [0.3.6](versions/oxygen-six-stylesheets-0.3.6.zip) – 2026-09-26
 
 ### Security
