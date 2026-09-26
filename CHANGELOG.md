@@ -2,6 +2,12 @@
 
 Each linked version number opens the installable ZIP file of that version. Versions before 0.3.1 have no ZIP file.
 
+## [0.3.9](versions/oxygen-six-stylesheets-0.3.9.zip) – 2026-09-26
+
+### Added
+
+- On activation, the plugin checks the character set of the database tables. On `utf8mb3` tables, a warning tells you that stylesheets cannot contain emoji or other 4-byte characters.
+
 ## [0.3.8](versions/oxygen-six-stylesheets-0.3.8.zip) – 2026-09-26
 
 ### Fixed
