@@ -10,6 +10,7 @@ The installable ZIP files are in the [`versions`](versions) folder.
 
 | Version | File |
 |---|---|
+| 0.3.2 | [oxygen-six-stylesheets-0.3.2.zip](versions/oxygen-six-stylesheets-0.3.2.zip) |
 | 0.3.1 | [oxygen-six-stylesheets-0.3.1.zip](versions/oxygen-six-stylesheets-0.3.1.zip) |
 
 ## Requirements
@@ -72,6 +73,7 @@ The editor shows a warning when the CSS has:
 
 | Setup | Method |
 |---|---|
+| 0.3.2 | [oxygen-six-stylesheets-0.3.2.zip](versions/oxygen-six-stylesheets-0.3.2.zip) |
 | Oxygen 6 | The plugin adds the CSS to the style output of Oxygen. The frontend and the builder preview show it. |
 | Oxygen 4.x (classic) | The plugin adds a `<style>` element late in `wp_head`, after the CSS of Oxygen. The frontend and the builder preview show it. The builder interface does not get it. |
 | Without Oxygen | The plugin adds a `<style>` element in `wp_head`. |
@@ -98,7 +100,7 @@ Export your stylesheets before you delete the plugin.
 
 ## License
 
-Copyright (C) 2026 Jonas Zadow
+Copyright (C) 2026 Jonas Karanlik Zadow
 
 This program is free software. You can redistribute it and/or modify it under the terms of the GNU General Public License, version 2 or (at your option) any later version. See [LICENSE](LICENSE).
 
