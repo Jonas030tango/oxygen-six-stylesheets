@@ -75,9 +75,6 @@ The editor shows a warning when the CSS has:
 
 | Setup | Method |
 |---|---|
-| 0.3.4 | [oxygen-six-stylesheets-0.3.4.zip](versions/oxygen-six-stylesheets-0.3.4.zip) |
-| 0.3.3 | [oxygen-six-stylesheets-0.3.3.zip](versions/oxygen-six-stylesheets-0.3.3.zip) |
-| 0.3.2 | [oxygen-six-stylesheets-0.3.2.zip](versions/oxygen-six-stylesheets-0.3.2.zip) |
 | Oxygen 6 | The plugin adds the CSS to the style output of Oxygen. The frontend and the builder preview show it. |
 | Oxygen 4.x (classic) | The plugin adds a `<style>` element late in `wp_head`, after the CSS of Oxygen. The frontend and the builder preview show it. The builder interface does not get it. |
 | Without Oxygen | The plugin adds a `<style>` element in `wp_head`. |
