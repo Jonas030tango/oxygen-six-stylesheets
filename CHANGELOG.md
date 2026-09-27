@@ -2,6 +2,23 @@
 
 Each linked version number opens the installable ZIP file of that version. Versions before 0.3.1 have no ZIP file.
 
+## [0.3.11](versions/oxygen-six-stylesheets-0.3.11.zip) – 2026-09-27
+
+### Security
+
+- The CSS filter also removes keywords that use CSS escapes or comments, for example `@\69mport` or `behavior/**/:`. The markers are `[removed]`, `[removed]:`, `[removed](` and `@o6s-removed-import`. A marker no longer hides the rules after it.
+- If the CSS check cannot finish, for example on a very large input, the plugin does not save the CSS. A notice says so, and the previous CSS stays. The import skips such an entry.
+- After the update, the plugin checks the CSS of all stylesheets once. A stylesheet whose CSS fails the check is no longer used on the site. The editor shows its CSS and a notice until you correct and save it.
+- The import removes HTML tags from stylesheet titles for all users.
+- A stylesheet can no longer be private or have a password. Quick Edit and Bulk Edit no longer offer these options, and the update changes existing private stylesheets to drafts.
+
+### Fixed
+
+- The edit screen hides the Visibility row of the Publish box. Before, the rule that hides it had no effect.
+- The Security Notice about external URLs also shows for `url(//host)` and for external strings in `image-set()`.
+- The CSS filter no longer changes `scroll-behavior`, `overscroll-behavior` or selectors such as `.behavior:hover`.
+- The "CSS not saved" notice and the list of stylesheets with unchecked CSS show only to users who can edit these stylesheets.
+
 ## [0.3.10](versions/oxygen-six-stylesheets-0.3.10.zip) – 2026-09-27
 
 ### Changed
