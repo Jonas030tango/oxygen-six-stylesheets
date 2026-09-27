@@ -2,6 +2,23 @@
 
 Each linked version number opens the installable ZIP file of that version. Versions before 0.3.1 have no ZIP file.
 
+## [0.3.10](versions/oxygen-six-stylesheets-0.3.10.zip) – 2026-09-27
+
+### Changed
+
+- The frontend loads all published stylesheets with one database query. With a persistent object cache, for example Redis, one cache entry holds the result.
+- Query filters and post meta filters of other plugins, for example `pre_get_posts`, `posts_where` or `get_post_metadata`, no longer change the stylesheets on the frontend.
+- The import notice counts duplicate titles and invalid entries separately. When nothing is imported, the notice is a warning.
+- The import accepts only a `.json` file. The browser rejects an empty file field, another file type and a file larger than 2 MB before the upload.
+- A failed import shows a notice with the reason, for example an expired form, a JSON syntax error or a file without the "items" list.
+
+### Fixed
+
+- The Import / Export page no longer has two buttons with the same `id="submit"`.
+- The import notice uses the singular form for one stylesheet: "1 stylesheet imported".
+- A reload of the import result page no longer sends the file again.
+- The notices of the stylesheet screens say "stylesheet" instead of "post".
+
 ## [0.3.9](versions/oxygen-six-stylesheets-0.3.9.zip) – 2026-09-27
 
 ### Added
