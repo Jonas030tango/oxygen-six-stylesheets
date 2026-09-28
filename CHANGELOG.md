@@ -2,6 +2,15 @@
 
 Each linked version number opens the installable ZIP file of that version. Versions before 0.3.1 have no ZIP file.
 
+## 0.3.13 – not released
+
+### Changed
+
+- On Oxygen 6, the plugin loads the stylesheets only on frontend requests. REST, admin, cron and login requests now use less memory.
+- The plugin adds its admin UI hooks only on admin requests.
+- The check for stylesheets with unchecked CSS no longer runs a database query on each admin page. It runs after a plugin update until no such stylesheet is left.
+- WordPress keeps at most 10 revisions of a stylesheet. When a save creates a new revision, WordPress deletes the oldest revisions above 10. Your own `WP_POST_REVISIONS` limit or revisions filter stays in effect.
+
 ## [0.3.12](versions/oxygen-six-stylesheets-0.3.12.zip) – 2026-09-28
 
 ### Fixed
