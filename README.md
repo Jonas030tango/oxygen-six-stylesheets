@@ -10,6 +10,7 @@ The installable ZIP files are in the [`versions`](versions) folder. The [changel
 
 | Version | File |
 |---|---|
+| 0.3.12 | [oxygen-six-stylesheets-0.3.12.zip](versions/oxygen-six-stylesheets-0.3.12.zip) |
 | 0.3.11 | [oxygen-six-stylesheets-0.3.11.zip](versions/oxygen-six-stylesheets-0.3.11.zip) |
 | 0.3.10 | [oxygen-six-stylesheets-0.3.10.zip](versions/oxygen-six-stylesheets-0.3.10.zip) |
 | 0.3.9 | [oxygen-six-stylesheets-0.3.9.zip](versions/oxygen-six-stylesheets-0.3.9.zip) |
