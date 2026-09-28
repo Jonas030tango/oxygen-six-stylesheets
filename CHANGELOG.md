@@ -2,6 +2,16 @@
 
 Each linked version number opens the installable ZIP file of that version. Versions before 0.3.1 have no ZIP file.
 
+## [0.3.12](versions/oxygen-six-stylesheets-0.3.12.zip) – 2026-09-28
+
+### Fixed
+
+- The warnings about braces and parentheses ignore braces and parentheses in comments, strings and `url()`. A comment without `*/` and a string without its closing quote end as in the browser.
+- If the CSS is too large or too complex to check, a warning says so.
+- The Security Notice about external URLs also shows for `@import "https://…"`, for a URL with CSS escapes such as `\2f\2f`, and for `url(http:host/x)`. It no longer shows for a URL in a comment or for the SVG namespace `http://www.w3.org/2000/svg` in a data URI.
+- When you delete the plugin, it removes all its data. This includes stylesheets in the trash, the stylesheet categories, and the plugin capabilities on every role and user. Capabilities of other plugins stay.
+- After an activation with WP-CLI, the first load of the Stylesheets screen no longer shows "Sorry, you are not allowed to edit posts in this post type."
+
 ## [0.3.11](versions/oxygen-six-stylesheets-0.3.11.zip) – 2026-09-27
 
 ### Security
