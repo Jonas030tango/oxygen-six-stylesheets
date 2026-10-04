@@ -2,6 +2,21 @@
 
 Each linked version number opens the installable ZIP file of that version. Versions before 0.3.1 have no ZIP file.
 
+## [0.3.14](versions/oxygen-six-stylesheets-0.3.14.zip) – 2026-10-04
+
+### Added
+
+- Visitors get the stylesheets as one cached CSS file instead of inline CSS. The browser keeps the file, so the next pages load less CSS. The setting "Cached file" is in O6 Stylesheets → Settings and is on by default. Users who can edit stylesheets still get the inline CSS with the stylesheet names.
+- If the plugin cannot build or use the file, all visitors get the inline CSS as before. Examples are a stylesheet with `@namespace` or a relative URL such as `../a.png`. A stylesheet whose last rule does not end with `}`, for example only `@layer a, b;`, also blocks the file. The server can also fail to write or send the file. The Settings page shows the reason.
+- With WPML or Polylang and one domain per language, each domain gets its own file if a URL in the CSS starts with one `/`.
+- A page cache that keeps a page longer than 7 days can link a deleted file. The file can also be missing on a site with more than one web server and no shared uploads. A CSS optimizer that combines CSS or loads it later can change how the stylesheets apply. Clear the page cache in the first case. In the other cases, turn off "Cached file".
+
+### Changed
+
+- With a persistent object cache, a change to other content, for example a product, no longer clears the stylesheets from that cache. Shops and other sites with many changes read the stylesheets from the database less often.
+- The plugin sorts the stylesheets in PHP instead of in the database. The order stays the same. Without a persistent object cache, the stylesheets load faster when they are large.
+- On Oxygen 6, the builder interface no longer reads the stylesheets, so it uses less memory. The builder preview still shows them.
+
 ## [0.3.13](versions/oxygen-six-stylesheets-0.3.13.zip) – 2026-09-28
 
 ### Changed
