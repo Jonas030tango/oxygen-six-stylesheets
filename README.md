@@ -89,6 +89,10 @@ The editor shows a warning when the CSS has:
 | Oxygen 4.x (classic) | The plugin adds a `<style>` element late in `wp_head`, after the CSS of Oxygen. The frontend and the builder preview show it. The builder interface does not get it. |
 | Without Oxygen | The plugin adds a `<style>` element in `wp_head`. |
 
+### Page cache
+
+After a change of the stylesheets, the plugin clears the page cache of Hummingbird. For another page cache, clear it on the action `o6s_output_changed`.
+
 ### Without Oxygen
 
 The plugin also works without Oxygen, as a stylesheet manager for any theme. The admin shows a notice about this.

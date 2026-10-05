@@ -2,6 +2,16 @@
 
 Each linked version number opens the installable ZIP file of that version. Versions before 0.3.1 have no ZIP file.
 
+## [0.3.15](versions/oxygen-six-stylesheets-0.3.15.zip) – 2026-10-04
+
+### Fixed
+
+- With the Hummingbird page cache, a cached page kept the old stylesheets after a change, and after 7 days it linked a deleted file. The plugin now clears the Hummingbird page cache when the stylesheets that visitors get change, and on activation, deactivation and uninstall.
+
+### Added
+
+- The action `o6s_output_changed` fires when the stylesheets that visitors get can change. Clear another page cache there.
+
 ## [0.3.14](versions/oxygen-six-stylesheets-0.3.14.zip) – 2026-10-04
 
 ### Added
